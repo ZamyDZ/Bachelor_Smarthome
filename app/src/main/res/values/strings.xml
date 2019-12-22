@@ -3,4 +3,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- List of Enum Category as ArrayList-->
+    <string-array name="categoryList">
+        <item>Kitchen</item>
+        <item>Livingroom</item>
+        <item>Office</item>
+        <item>Sleepingroom</item>
+    </string-array>
 </resources>

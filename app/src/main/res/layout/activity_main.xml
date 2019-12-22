@@ -4,57 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:orientation="vertical">
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/Username_Main"
-                android:layout_marginTop="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:hint="Username">
-            </TextView>
-            <TextView
-                android:id="@+id/Email_Main"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Email">
-            </TextView>
-            <TextView
-                android:id="@+id/Password_Main"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Password">
-            </TextView>
-            <TextView
-                android:id="@+id/FirebaseID"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="FirebaseID"/>
-            <Button
-                android:id="@+id/LogoutButton_Main"
-                android:layout_marginTop="40dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Logout">
-            </Button>
 
+            <include layout="@layout/toolbarmain"
+                android:id="@+id/ToolbarMain"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/frame"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="3dp">
+                    <TextView
+                        android:id="@+id/Username_Main"
+                        android:textSize="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Username">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/Email_Main"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:scrollbars="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/Floating_Button_Main"
+                android:layout_gravity="center|bottom"
+                android:src="@drawable/ic_add_room_main"
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:tint="@color/white"
+                app:maxImageSize="@android:dimen/app_icon_size"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/CreateRoomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
 </LinearLayout>

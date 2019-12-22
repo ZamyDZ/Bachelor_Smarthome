@@ -1,6 +1,6 @@
 <resources>
 
-    <!-- Base application theme. Casual Actionbar: Light.DarkActionBar-->
+    <!-- Base application theme. Casual Actionbar: Light.DarkActionBar   parent="Theme.AppCompat.Light.NoActionBar-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
