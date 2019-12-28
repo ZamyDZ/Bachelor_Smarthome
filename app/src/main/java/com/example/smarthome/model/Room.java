@@ -3,7 +3,9 @@ package com.example.smarthome.model;
 
 import androidx.annotation.Nullable;
 
-public class Room {
+import java.io.Serializable;
+
+public class Room implements Serializable {
     //Owner fo the room who is a user
     private String owner;
     //Name of the Room TODO can be used for ID

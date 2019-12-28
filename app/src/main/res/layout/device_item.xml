@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="4dp"
     android:layout_marginBottom="4dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,12 +19,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
+                    android:tint="@color/blue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_crop_item"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:id="@+id/RoomItemName"
+                    android:id="@+id/DeviceItemName"
                     android:hint="Name"
                     android:textSize="20dp"
                     android:layout_width="wrap_content"
@@ -35,16 +37,16 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_marginLeft="3dp"
+                    android:id="@+id/deviceItemCardStatus"
+                    android:tint="@color/green"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_email_item"/>
+                    android:src="@drawable/ic_power"/>
                 <TextView
-                    android:layout_marginLeft="5dp"
-                    android:id="@+id/RoomItemOwner"
-                    android:layout_marginTop="2dp"
+                    android:id="@+id/DeviceItemstatus"
+                    android:layout_marginTop="5dp"
                     android:textSize="20dp"
-                    android:hint="Owner"
+                    android:hint="Status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -54,16 +56,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
+                    android:tint="@color/blue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_label_item"/>
 
                 <TextView
-                    android:id="@+id/RoomItemCategory"
+                    android:id="@+id/DeviceItemType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:hint="Category"
+                    android:hint="Device-tpye"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -74,7 +77,8 @@
             android:layout_height="wrap_content"
             android:gravity="right">
             <ImageView
-                android:id="@+id/RoomItemDashboard"
+                android:tint="@color/blue"
+                android:id="@+id/DeviceItemDashboard"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
                 android:layout_width="wrap_content"

@@ -7,4 +7,7 @@
     <!--Colors of Buttons, etc-->
     <color name="colorAccent">#D81B60</color>
     <color name="white">#FFFFFF</color>
+    <color name="green">#03fc62</color>
+    <color name="red">#eb072d</color>
+    <color name="blue">#0519fa</color>
 </resources>

@@ -45,7 +45,7 @@ public class CreateRoomFragment extends Fragment {
     //Spinner of the Enum: Category
     private Spinner enumSpinner;
     //Editext room name
-    EditText createRoomName;
+    private EditText createRoomName;
     //Create room button
     private Button createRoomButton;
     //Fragment Listener

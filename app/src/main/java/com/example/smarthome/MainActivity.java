@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     private static final String TAG = "MainActivity";
 
     //UID of The current User
-    private String currentUID;
+    private String currentUID, roomID;
 
     //Countdownlatch for the getRooms thread
     private CountDownLatch roomLatch = new CountDownLatch(1);
@@ -85,11 +85,9 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         roomList = new ArrayList<>();
 
         //Reference to Firebase Authentication and Database
-        Log.w(TAG, "404 JETZT FIRBASE");
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
         currentUser = mAuth.getCurrentUser();
-        Log.w(TAG, "404 FINISH FIRBASE");
 
         //Components to display the user data
         Username_Main = findViewById(R.id.Username_Main);
@@ -235,7 +233,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                             User user = new User(entry.toObject(User.class).getEmail(), entry.toObject(User.class).getUsername(), entry.toObject(User.class).getPassword());
                             Log.w(TAG, "Found user: " + user.toString());
                             String id = entry.getId();
-                            //updating the UI so the Username and Email can be disbplayed
+                            //updating the UI so the Username and Email can be displayed
                             updateUI(user, id);
                             //countdown the latch so the rooms can be loaded
                             roomLatch.countDown();
@@ -253,8 +251,80 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         roomLayoutManager = new LinearLayoutManager(this);
         roomAdapter = new RoomAdapter(roomList);
 
-        roomRecyclerview.setLayoutManager(roomLayoutManager);
-        roomRecyclerview.setAdapter(roomAdapter);
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                roomRecyclerview.setLayoutManager(roomLayoutManager);
+                roomRecyclerview.setAdapter(roomAdapter);
+            }
+        });
+
+        //TODO CHANGE HERE STUFF TESTING
+        roomAdapter.setOnItemClickListener(new RoomAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                //get object of the select room
+                Room selected = roomList.get(position);
+
+                //open Dashboard
+                Intent dashboard = new Intent(MainActivity.this, DashboardActivity.class);
+
+                CountDownLatch waitLatch = new CountDownLatch(1);
+
+                Thread first = new Thread(() -> {
+                    //get room ID
+                    db.collection("users")
+                            .document(currentUID)
+                            .collection("rooms")
+                            .get()
+                            .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                                @Override
+                                public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                                    queryDocumentSnapshots.getDocuments()
+                                            .stream()
+                                            .forEach(entry -> {
+                                                if(selected.equals(entry.toObject(Room.class))){
+                                                    roomID = entry.getId();
+                                                    Log.w(TAG, "202 FOUND ROOM ID: " + roomID);
+                                                    waitLatch.countDown();
+                                                }
+                                            });
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                }
+                            });
+                });
+
+                Thread second = new Thread(() -> {
+                    try {
+                        waitLatch.await();
+                        //transfer the room object
+                        dashboard.putExtra("Room", selected);
+                        //transfer user id
+                        dashboard.putExtra("userID", currentUID);
+                        //transfer room id
+                        dashboard.putExtra("roomID", roomID);
+
+                        MainActivity.this.startActivity(dashboard);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                });
+
+                first.start();
+                second.start();
+
+                try {
+                    first.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     /**
