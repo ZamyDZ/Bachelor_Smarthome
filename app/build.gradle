@@ -49,6 +49,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     //Firebase - Cloud Firestore
     implementation 'com.google.firebase:firebase-firestore:21.3.1'
+
+    //Firebase Cloud Functions
+    implementation 'com.google.firebase:firebase-functions:19.0.1'
+
 }
 //Google-Play services
 apply plugin: 'com.google.gms.google-services'

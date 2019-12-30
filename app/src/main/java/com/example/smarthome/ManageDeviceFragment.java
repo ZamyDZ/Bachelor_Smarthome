@@ -27,6 +27,10 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.functions.FirebaseFunctions;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -42,6 +46,9 @@ public class ManageDeviceFragment extends Fragment {
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
     private FirebaseUser currentUser;
+
+    //Cloud functions
+    private FirebaseFunctions mFunctions;
 
     //ID of the current user, room and device
     private String userID, roomID, deviceID;
@@ -90,6 +97,9 @@ public class ManageDeviceFragment extends Fragment {
         db = FirebaseFirestore.getInstance();
         currentUser = mAuth.getCurrentUser();
 
+        //Cloud Functions
+        mFunctions = FirebaseFunctions.getInstance();
+
         //get transferred data
         userID = (String) getArguments().getSerializable("userID");
         roomID = (String) getArguments().getSerializable("roomID");
@@ -115,20 +125,33 @@ public class ManageDeviceFragment extends Fragment {
         toasterLayout = view.findViewById(R.id.ManageDeviceToasterLayout);
 
         //ImageViewButtons
-        //TODO ADD CLOUD FUNCTIONS TRIGGER TO THE BUTTONS
         washingButton = view.findViewById(R.id.ManageDeviceWashingButton);
         toasterButton = view.findViewById(R.id.ManageDeviceToasterButton);
 
         washingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO cloud func trigger
+                //Data that gets transferred
+                Map<String, Object> data = new HashMap<>();
+                data.put("userID", userID);
+                data.put("roomID", roomID);
+                data.put("deviceID", deviceID);
+
+                //starting Cloud Function for the Washingmachine
+                mFunctions.getHttpsCallable("updateWashingMachine").call(data);
             }
         });
         toasterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO cloud func trigger
+                //Data that gets transferred
+                Map<String, Object> data = new HashMap<>();
+                data.put("userID", userID);
+                data.put("roomID", roomID);
+                data.put("deviceID", deviceID);
+
+                //starting Cloud Function for the Toaster
+                mFunctions.getHttpsCallable("startToaster").call(data);
             }
         });
 
@@ -235,7 +258,6 @@ public class ManageDeviceFragment extends Fragment {
                 });
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
