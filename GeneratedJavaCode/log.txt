@@ -1,0 +1,284 @@
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java createLogfile
+INFO: ...Start Parsing .sensomod...
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start Modell
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start decisionlogic
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start enumelement
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start decisionlogic
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: start enumelement
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java extractIDsFromNodes
+INFO: [Devices, Washingdevice, Toasterdevice, Users, Rooms]
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start Modell
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start decisionlogic
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start enumelement
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: {Devices=[Washingdevice]}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: {Devices=[Washingdevice, Toasterdevice]}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: {Devices=[Washingdevice, Toasterdevice], Rooms=[Users]}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start decisionlogic
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: start enumelement
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java mapRelationToClasses
+INFO: [Devices, Washingdevice, Toasterdevice, Users, Rooms]
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start Modell
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: myClass public class Devices {
+
+    public Devices() {
+    }
+}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: classType Context
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: className Devices
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: multiple false
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start decisionlogic
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start enumelement
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: Washingmachine
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: Toaster
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: enum: public static enum deviceType {
+
+    Washingmachine, Toaster
+}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: myClass public class Washingdevice {
+
+    public Washingdevice() {
+    }
+}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: sensor Washingdevice has not multiple set
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: classType PhysicalSensor
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: className Washingdevice
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: multiple false
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: myClass public class Toasterdevice {
+
+    public Toasterdevice() {
+    }
+}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: sensor Toasterdevice has not multiple set
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: classType PhysicalSensor
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: className Toasterdevice
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: multiple false
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java writeToDisk
+INFO: PhysicalSensor already exists
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: myClass public class Users {
+
+    public Users() {
+    }
+}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: sensor Users has not multiple set
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: classType VirtualSensor
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: className Users
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: multiple false
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start node
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: myClass public class Rooms {
+
+    public Rooms() {
+    }
+}
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: classType Context
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: className Rooms
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: multiple false
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java writeToDisk
+INFO: Context already exists
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start decisionlogic
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start output
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start type
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start element
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: start enumelement
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: Kitchen
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: Livingroom
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: Office
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: Sleepingroom
+Feb 17, 2020 4:52:00 PM sensomod.javasourcecodegen.handlers.SenSoMod2Java transform
+INFO: enum: public static enum roomCategory {
+
+    Kitchen, Livingroom, Office, Sleepingroom
+}

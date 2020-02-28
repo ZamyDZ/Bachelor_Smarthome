@@ -9,6 +9,7 @@ import java.util.Objects;
  */
 public class Toaster extends Device implements Serializable {
 
+
     private String deviceName;
     private boolean powerStatus;
 
